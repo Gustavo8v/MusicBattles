@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        let viewController = ProfileViewController(nibName: nil, bundle: nil)
+        let viewController = RegisterViewController(nibName: nil, bundle: nil)
         let navigationController = UINavigationController()
         navigationController.viewControllers = [viewController]
         self.window?.rootViewController = navigationController

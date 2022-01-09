@@ -24,6 +24,7 @@
 		724D2A4B278AC0E0006DE821 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 724D2A49278AC0E0006DE821 /* RegisterViewController.xib */; };
 		724D2A4E278AC10B006DE821 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724D2A4C278AC10B006DE821 /* LoginViewController.swift */; };
 		724D2A4F278AC10B006DE821 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 724D2A4D278AC10B006DE821 /* LoginViewController.xib */; };
+		729009A5278AC6DC00581861 /* TexFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729009A4278AC6DC00581861 /* TexFieldExtension.swift */; };
 		9C203B930656DE9723E81F76 /* Pods_MusicBattles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A02BC4A72BAB5B99C202CC3 /* Pods_MusicBattles.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		724D2A49278AC0E0006DE821 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		724D2A4C278AC10B006DE821 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		724D2A4D278AC10B006DE821 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		729009A4278AC6DC00581861 /* TexFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TexFieldExtension.swift; sourceTree = "<group>"; };
 		AE992BA7B1501B95BA8B98F1 /* Pods-MusicBattles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicBattles.debug.xcconfig"; path = "Target Support Files/Pods-MusicBattles/Pods-MusicBattles.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +87,7 @@
 		724D2A13278A7C5A006DE821 /* MusicBattles */ = {
 			isa = PBXGroup;
 			children = (
+				724D2A38278AA7F8006DE821 /* Models */,
 				724D2A43278AC05E006DE821 /* Register */,
 				724D2A42278AC054006DE821 /* Login */,
 				724D2A31278A80B8006DE821 /* Utils */,
@@ -101,7 +104,6 @@
 		724D2A28278A7DE5006DE821 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				724D2A38278AA7F8006DE821 /* Models */,
 				724D2A2A278A7E22006DE821 /* Presenter */,
 				724D2A29278A7E1C006DE821 /* View */,
 			);
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				724D2A40278ABCD0006DE821 /* UIImageViewWExtension.swift */,
+				729009A4278AC6DC00581861 /* TexFieldExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -215,7 +218,6 @@
 				AE992BA7B1501B95BA8B98F1 /* Pods-MusicBattles.debug.xcconfig */,
 				2AB0469A723A872AD7B36AFA /* Pods-MusicBattles.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -278,7 +280,7 @@
 			);
 			mainGroup = 724D2A08278A7C5A006DE821;
 			packageReferences = (
-				724D2A32278A875E006DE821 /* XCRemoteSwiftPackageReference "realm-cocoa.git" */,
+				724D2A32278A875E006DE821 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 			);
 			productRefGroup = 724D2A12278A7C5A006DE821 /* Products */;
 			projectDirPath = "";
@@ -354,6 +356,7 @@
 			files = (
 				724D2A4E278AC10B006DE821 /* LoginViewController.swift in Sources */,
 				724D2A2D278A7E35006DE821 /* ProfileViewController.swift in Sources */,
+				729009A5278AC6DC00581861 /* TexFieldExtension.swift in Sources */,
 				724D2A30278A80B3006DE821 /* BaseViewController.swift in Sources */,
 				724D2A15278A7C5A006DE821 /* AppDelegate.swift in Sources */,
 				724D2A4A278AC0E0006DE821 /* RegisterViewController.swift in Sources */,
@@ -574,7 +577,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		724D2A32278A875E006DE821 /* XCRemoteSwiftPackageReference "realm-cocoa.git" */ = {
+		724D2A32278A875E006DE821 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-cocoa.git";
 			requirement = {
@@ -587,12 +590,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		724D2A33278A875E006DE821 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 724D2A32278A875E006DE821 /* XCRemoteSwiftPackageReference "realm-cocoa.git" */;
+			package = 724D2A32278A875E006DE821 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
 			productName = Realm;
 		};
 		724D2A35278A875E006DE821 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 724D2A32278A875E006DE821 /* XCRemoteSwiftPackageReference "realm-cocoa.git" */;
+			package = 724D2A32278A875E006DE821 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
