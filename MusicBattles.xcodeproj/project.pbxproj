@@ -16,9 +16,20 @@
 		724D2A30278A80B3006DE821 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724D2A2F278A80B3006DE821 /* BaseViewController.swift */; };
 		724D2A34278A875E006DE821 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 724D2A33278A875E006DE821 /* Realm */; };
 		724D2A36278A875E006DE821 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 724D2A35278A875E006DE821 /* RealmSwift */; };
+		724D2A3A278AA808006DE821 /* ModelsRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724D2A39278AA808006DE821 /* ModelsRealm.swift */; };
+		724D2A3D278AA9C1006DE821 /* DataUSerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724D2A3B278AA9C1006DE821 /* DataUSerTableViewCell.swift */; };
+		724D2A3E278AA9C1006DE821 /* DataUSerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 724D2A3C278AA9C1006DE821 /* DataUSerTableViewCell.xib */; };
+		724D2A41278ABCD0006DE821 /* UIImageViewWExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724D2A40278ABCD0006DE821 /* UIImageViewWExtension.swift */; };
+		724D2A4A278AC0E0006DE821 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724D2A48278AC0E0006DE821 /* RegisterViewController.swift */; };
+		724D2A4B278AC0E0006DE821 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 724D2A49278AC0E0006DE821 /* RegisterViewController.xib */; };
+		724D2A4E278AC10B006DE821 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724D2A4C278AC10B006DE821 /* LoginViewController.swift */; };
+		724D2A4F278AC10B006DE821 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 724D2A4D278AC10B006DE821 /* LoginViewController.xib */; };
+		9C203B930656DE9723E81F76 /* Pods_MusicBattles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A02BC4A72BAB5B99C202CC3 /* Pods_MusicBattles.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A02BC4A72BAB5B99C202CC3 /* Pods_MusicBattles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicBattles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AB0469A723A872AD7B36AFA /* Pods-MusicBattles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicBattles.release.xcconfig"; path = "Target Support Files/Pods-MusicBattles/Pods-MusicBattles.release.xcconfig"; sourceTree = "<group>"; };
 		724D2A11278A7C5A006DE821 /* MusicBattles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicBattles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		724D2A14278A7C5A006DE821 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		724D2A16278A7C5A006DE821 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +39,15 @@
 		724D2A2B278A7E35006DE821 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		724D2A2C278A7E35006DE821 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		724D2A2F278A80B3006DE821 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		724D2A39278AA808006DE821 /* ModelsRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsRealm.swift; sourceTree = "<group>"; };
+		724D2A3B278AA9C1006DE821 /* DataUSerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUSerTableViewCell.swift; sourceTree = "<group>"; };
+		724D2A3C278AA9C1006DE821 /* DataUSerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataUSerTableViewCell.xib; sourceTree = "<group>"; };
+		724D2A40278ABCD0006DE821 /* UIImageViewWExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewWExtension.swift; sourceTree = "<group>"; };
+		724D2A48278AC0E0006DE821 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		724D2A49278AC0E0006DE821 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		724D2A4C278AC10B006DE821 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		724D2A4D278AC10B006DE821 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		AE992BA7B1501B95BA8B98F1 /* Pods-MusicBattles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicBattles.debug.xcconfig"; path = "Target Support Files/Pods-MusicBattles/Pods-MusicBattles.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +57,7 @@
 			files = (
 				724D2A36278A875E006DE821 /* RealmSwift in Frameworks */,
 				724D2A34278A875E006DE821 /* Realm in Frameworks */,
+				9C203B930656DE9723E81F76 /* Pods_MusicBattles.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +69,8 @@
 			children = (
 				724D2A13278A7C5A006DE821 /* MusicBattles */,
 				724D2A12278A7C5A006DE821 /* Products */,
+				BBCC68FA319CAB1304DE2391 /* Pods */,
+				C402D6793C71D43ECD4BF9D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +85,8 @@
 		724D2A13278A7C5A006DE821 /* MusicBattles */ = {
 			isa = PBXGroup;
 			children = (
+				724D2A43278AC05E006DE821 /* Register */,
+				724D2A42278AC054006DE821 /* Login */,
 				724D2A31278A80B8006DE821 /* Utils */,
 				724D2A28278A7DE5006DE821 /* Profile */,
 				724D2A14278A7C5A006DE821 /* AppDelegate.swift */,
@@ -76,6 +101,7 @@
 		724D2A28278A7DE5006DE821 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				724D2A38278AA7F8006DE821 /* Models */,
 				724D2A2A278A7E22006DE821 /* Presenter */,
 				724D2A29278A7E1C006DE821 /* View */,
 			);
@@ -85,6 +111,7 @@
 		724D2A29278A7E1C006DE821 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				724D2A37278AA7E9006DE821 /* Cells */,
 				724D2A2B278A7E35006DE821 /* ProfileViewController.swift */,
 				724D2A2C278A7E35006DE821 /* ProfileViewController.xib */,
 			);
@@ -101,9 +128,103 @@
 		724D2A31278A80B8006DE821 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				724D2A3F278ABCBB006DE821 /* Extensions */,
 				724D2A2F278A80B3006DE821 /* BaseViewController.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		724D2A37278AA7E9006DE821 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				724D2A3B278AA9C1006DE821 /* DataUSerTableViewCell.swift */,
+				724D2A3C278AA9C1006DE821 /* DataUSerTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		724D2A38278AA7F8006DE821 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				724D2A39278AA808006DE821 /* ModelsRealm.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		724D2A3F278ABCBB006DE821 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				724D2A40278ABCD0006DE821 /* UIImageViewWExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		724D2A42278AC054006DE821 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				724D2A47278AC07E006DE821 /* Presenter */,
+				724D2A46278AC078006DE821 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		724D2A43278AC05E006DE821 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				724D2A45278AC06D006DE821 /* Presenter */,
+				724D2A44278AC067006DE821 /* View */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		724D2A44278AC067006DE821 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				724D2A48278AC0E0006DE821 /* RegisterViewController.swift */,
+				724D2A49278AC0E0006DE821 /* RegisterViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		724D2A45278AC06D006DE821 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		724D2A46278AC078006DE821 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				724D2A4C278AC10B006DE821 /* LoginViewController.swift */,
+				724D2A4D278AC10B006DE821 /* LoginViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		724D2A47278AC07E006DE821 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BBCC68FA319CAB1304DE2391 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE992BA7B1501B95BA8B98F1 /* Pods-MusicBattles.debug.xcconfig */,
+				2AB0469A723A872AD7B36AFA /* Pods-MusicBattles.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C402D6793C71D43ECD4BF9D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A02BC4A72BAB5B99C202CC3 /* Pods_MusicBattles.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,9 +234,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 724D2A25278A7C5B006DE821 /* Build configuration list for PBXNativeTarget "MusicBattles" */;
 			buildPhases = (
+				6D6183BE3D63E9645282986C /* [CP] Check Pods Manifest.lock */,
 				724D2A0D278A7C5A006DE821 /* Sources */,
 				724D2A0E278A7C5A006DE821 /* Frameworks */,
 				724D2A0F278A7C5A006DE821 /* Resources */,
+				261476B47E427EE80B65EA26 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,7 +278,7 @@
 			);
 			mainGroup = 724D2A08278A7C5A006DE821;
 			packageReferences = (
-				724D2A32278A875E006DE821 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				724D2A32278A875E006DE821 /* XCRemoteSwiftPackageReference "realm-cocoa.git" */,
 			);
 			productRefGroup = 724D2A12278A7C5A006DE821 /* Products */;
 			projectDirPath = "";
@@ -172,21 +295,71 @@
 			buildActionMask = 2147483647;
 			files = (
 				724D2A2E278A7E35006DE821 /* ProfileViewController.xib in Resources */,
+				724D2A4B278AC0E0006DE821 /* RegisterViewController.xib in Resources */,
+				724D2A4F278AC10B006DE821 /* LoginViewController.xib in Resources */,
 				724D2A21278A7C5B006DE821 /* LaunchScreen.storyboard in Resources */,
+				724D2A3E278AA9C1006DE821 /* DataUSerTableViewCell.xib in Resources */,
 				724D2A1E278A7C5B006DE821 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		261476B47E427EE80B65EA26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MusicBattles/Pods-MusicBattles-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MusicBattles/Pods-MusicBattles-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MusicBattles/Pods-MusicBattles-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D6183BE3D63E9645282986C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MusicBattles-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		724D2A0D278A7C5A006DE821 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				724D2A4E278AC10B006DE821 /* LoginViewController.swift in Sources */,
 				724D2A2D278A7E35006DE821 /* ProfileViewController.swift in Sources */,
 				724D2A30278A80B3006DE821 /* BaseViewController.swift in Sources */,
 				724D2A15278A7C5A006DE821 /* AppDelegate.swift in Sources */,
+				724D2A4A278AC0E0006DE821 /* RegisterViewController.swift in Sources */,
+				724D2A3A278AA808006DE821 /* ModelsRealm.swift in Sources */,
+				724D2A41278ABCD0006DE821 /* UIImageViewWExtension.swift in Sources */,
+				724D2A3D278AA9C1006DE821 /* DataUSerTableViewCell.swift in Sources */,
 				724D2A17278A7C5A006DE821 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +496,7 @@
 		};
 		724D2A26278A7C5B006DE821 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE992BA7B1501B95BA8B98F1 /* Pods-MusicBattles.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -350,6 +524,7 @@
 		};
 		724D2A27278A7C5B006DE821 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AB0469A723A872AD7B36AFA /* Pods-MusicBattles.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -399,7 +574,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		724D2A32278A875E006DE821 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+		724D2A32278A875E006DE821 /* XCRemoteSwiftPackageReference "realm-cocoa.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-cocoa.git";
 			requirement = {
@@ -412,12 +587,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		724D2A33278A875E006DE821 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 724D2A32278A875E006DE821 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			package = 724D2A32278A875E006DE821 /* XCRemoteSwiftPackageReference "realm-cocoa.git" */;
 			productName = Realm;
 		};
 		724D2A35278A875E006DE821 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 724D2A32278A875E006DE821 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			package = 724D2A32278A875E006DE821 /* XCRemoteSwiftPackageReference "realm-cocoa.git" */;
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
