@@ -31,57 +31,60 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAg-cc-lmP">
-                                    <rect key="frame" x="161.5" y="20" width="91" height="29"/>
+                                    <rect key="frame" x="161.5" y="20" width="91" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="aL5-oy-hCE"/>
+                                    </constraints>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                     <color key="textColor" systemColor="systemGreenColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ySR-Hc-LdG" customClass="TextField" customModule="Material">
-                                    <rect key="frame" x="37.5" y="89" width="339" height="51"/>
+                                    <rect key="frame" x="37.5" y="90" width="339" height="51"/>
                                     <constraints>
                                         <constraint firstAttribute="height" secondItem="ySR-Hc-LdG" secondAttribute="width" multiplier="0.15" id="WUe-NS-5YF"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                     <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Nombre"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Nombre *"/>
                                         <userDefinedRuntimeAttribute type="number" keyPath="placeholderVerticalOffset">
                                             <real key="value" value="0.0"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LKH-mZ-Mzi" customClass="TextField" customModule="Material">
-                                    <rect key="frame" x="37.5" y="261" width="339" height="51"/>
+                                    <rect key="frame" x="37.5" y="262" width="339" height="51"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Edad"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Edad *"/>
                                     </userDefinedRuntimeAttributes>
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fkx-Qs-iDP" customClass="TextField" customModule="Material">
-                                    <rect key="frame" x="37.5" y="347" width="339" height="50.5"/>
+                                    <rect key="frame" x="37.5" y="348" width="339" height="50.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                     <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Email"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Email *"/>
                                     </userDefinedRuntimeAttributes>
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tfg-bc-G7m" customClass="TextField" customModule="Material">
-                                    <rect key="frame" x="37.5" y="432.5" width="339" height="51"/>
+                                    <rect key="frame" x="37.5" y="433.5" width="339" height="51"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Contraseña"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Contraseña *"/>
                                     </userDefinedRuntimeAttributes>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3R-mq-dsL">
-                                    <rect key="frame" x="52" y="533.5" width="310.5" height="46.5"/>
+                                    <rect key="frame" x="52" y="534.5" width="310.5" height="46.5"/>
                                     <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" secondItem="B3R-mq-dsL" secondAttribute="width" multiplier="0.15" id="uaF-5o-ERI"/>
                                     </constraints>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Agregar">
+                                    <buttonConfiguration key="configuration" style="plain" title="Registrar">
                                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </buttonConfiguration>
                                     <connections>
@@ -89,18 +92,18 @@
                                     </connections>
                                 </button>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pi7-hm-aBh" customClass="TextField" customModule="Material">
-                                    <rect key="frame" x="37.5" y="175" width="339" height="51"/>
+                                    <rect key="frame" x="37.5" y="176" width="339" height="51"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                     <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Apellidos"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Apellidos *"/>
                                     </userDefinedRuntimeAttributes>
                                 </textField>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="LKH-mZ-Mzi" firstAttribute="leading" secondItem="Pi7-hm-aBh" secondAttribute="leading" id="4mh-6C-7Cb"/>
-                                <constraint firstAttribute="bottom" secondItem="B3R-mq-dsL" secondAttribute="bottom" priority="250" constant="238" id="6cd-be-xKZ"/>
+                                <constraint firstAttribute="bottom" secondItem="B3R-mq-dsL" secondAttribute="bottom" priority="750" constant="238" id="6cd-be-xKZ"/>
                                 <constraint firstItem="zAg-cc-lmP" firstAttribute="top" secondItem="8wi-On-Tpa" secondAttribute="top" constant="20" id="6to-tz-nFP"/>
                                 <constraint firstItem="ySR-Hc-LdG" firstAttribute="centerX" secondItem="8wi-On-Tpa" secondAttribute="centerX" id="8be-7V-7KC"/>
                                 <constraint firstItem="Pi7-hm-aBh" firstAttribute="trailing" secondItem="ySR-Hc-LdG" secondAttribute="trailing" id="9Bl-Ye-DsR"/>
@@ -142,9 +145,13 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="TLW-K1-Tss" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="BKD-9q-qHI"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TLW-K1-Tss" secondAttribute="trailing" id="F8y-j5-gKZ"/>
                 <constraint firstItem="TLW-K1-Tss" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="NcZ-Yy-Okh"/>
+                <constraint firstItem="TLW-K1-Tss" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="OQP-9b-UgE"/>
                 <constraint firstItem="TLW-K1-Tss" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="OXn-nN-tUw"/>
+                <constraint firstItem="TLW-K1-Tss" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.912946" priority="250" id="iJc-lp-2hX"/>
+                <constraint firstItem="TLW-K1-Tss" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="mBM-8b-vAj"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="TLW-K1-Tss" secondAttribute="bottom" id="x6i-Q5-9Kv"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="143.97321428571428"/>

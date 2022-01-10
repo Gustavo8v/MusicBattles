@@ -13,6 +13,5 @@ class RegisterUser: Object {
     @objc dynamic var lastName = ""
     @objc dynamic var age = 0
     @objc dynamic var email = ""
-    @objc dynamic var password = ""
     @objc dynamic var imageProfile: Data?
 }
