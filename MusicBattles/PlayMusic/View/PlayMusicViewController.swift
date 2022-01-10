@@ -36,6 +36,6 @@ class PlayMusicViewController: BaseViewController {
     
     @IBAction func onClickPlayAndStopSong(_ sender: Any) {
         guard let safeArchive = dataSong?.archive else { return }
-        playButton.setTitle(presenter.playSong(audio: safeArchive) ? "Pausar" : "Detener", for: .normal)
+        playButton.setTitle(presenter.playSong(audio: safeArchive) ? "Pausar" : "Reproducir", for: .normal)
     }
 }
