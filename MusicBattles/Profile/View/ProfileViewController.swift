@@ -29,6 +29,7 @@ class ProfileViewController: BaseViewController {
         prepareCollection()
         prepareActionsImage()
         validateImageProfile()
+        presenter.chargeDataMusic()
     }
     
     func validateImageProfile(){
@@ -89,8 +90,14 @@ class ProfileViewController: BaseViewController {
     }
     
     func prepareCollection(){
-//        dataMusicCollectionView.delegate = self
-//        dataMusicCollectionView.dataSource = self
+        dataMusicCollectionView.delegate = self
+        dataMusicCollectionView.dataSource = self
+        dataMusicCollectionView.register(UINib(nibName: DataMusicCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: DataMusicCollectionViewCell.identifier)
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 0
+        layout.scrollDirection = .vertical
+        dataMusicCollectionView.collectionViewLayout = layout
     }
     
     func chargeData(data: RegisterUser){
@@ -112,15 +119,28 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-//extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        <#code#>
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        <#code#>
-//    }
-//}
+extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.presenter.dataMusic.count
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cellMusic = collectionView.dequeueReusableCell(withReuseIdentifier: DataMusicCollectionViewCell.identifier, for: indexPath) as? DataMusicCollectionViewCell else { return UICollectionViewCell() }
+        cellMusic.prepareCollection(data: presenter.dataMusic[indexPath.item])
+        return cellMusic
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = UIScreen.main.bounds.width / 3
+        return CGSize(width: width, height: width)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = PlayMusicViewController()
+        vc.chargeDataSong(data: presenter.dataMusic[indexPath.item])
+        present(vc, animated: true, completion: nil)
+    }
+}
 
 extension ProfileViewController: DataUSerTableViewCellDelegate {
     func closeSession() {
@@ -136,6 +156,10 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true, completion: nil)
         guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else { return }
+        if picker.cameraDevice == .rear {
+            showAlert(title: "¡Ups!", description: "Por favor toma la imagen con la cámara frontal")
+            return
+        }
         let dataImage = image.pngData()
         selectedProfileUser.isHidden = true
         self.presenter.updateImageUser(image: dataImage, email: userData.email)

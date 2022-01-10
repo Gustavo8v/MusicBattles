@@ -40,6 +40,11 @@
 		724E9BEC278BDAAB0070E468 /* amnesia.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 724E9BE3278BDAAB0070E468 /* amnesia.mp3 */; };
 		724E9BED278BDAAB0070E468 /* nuestrasHuellas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 724E9BE4278BDAAB0070E468 /* nuestrasHuellas.mp3 */; };
 		724E9BEE278BDAAB0070E468 /* c'mere.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 724E9BE5278BDAAB0070E468 /* c'mere.mp3 */; };
+		724E9BF1278BE2240070E468 /* DataMusicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9BEF278BE2240070E468 /* DataMusicCollectionViewCell.swift */; };
+		724E9BF2278BE2240070E468 /* DataMusicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 724E9BF0278BE2240070E468 /* DataMusicCollectionViewCell.xib */; };
+		724E9BF8278BE7540070E468 /* PlayMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9BF6278BE7540070E468 /* PlayMusicViewController.swift */; };
+		724E9BF9278BE7540070E468 /* PlayMusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 724E9BF7278BE7540070E468 /* PlayMusicViewController.xib */; };
+		724E9BFB278BEC7B0070E468 /* PlayMusicPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9BFA278BEC7B0070E468 /* PlayMusicPresenter.swift */; };
 		729009A5278AC6DC00581861 /* TexFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729009A4278AC6DC00581861 /* TexFieldExtension.swift */; };
 		9C203B930656DE9723E81F76 /* Pods_MusicBattles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A02BC4A72BAB5B99C202CC3 /* Pods_MusicBattles.framework */; };
 /* End PBXBuildFile section */
@@ -79,6 +84,11 @@
 		724E9BE3278BDAAB0070E468 /* amnesia.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = amnesia.mp3; sourceTree = "<group>"; };
 		724E9BE4278BDAAB0070E468 /* nuestrasHuellas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nuestrasHuellas.mp3; sourceTree = "<group>"; };
 		724E9BE5278BDAAB0070E468 /* c'mere.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "c'mere.mp3"; sourceTree = "<group>"; };
+		724E9BEF278BE2240070E468 /* DataMusicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMusicCollectionViewCell.swift; sourceTree = "<group>"; };
+		724E9BF0278BE2240070E468 /* DataMusicCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataMusicCollectionViewCell.xib; sourceTree = "<group>"; };
+		724E9BF6278BE7540070E468 /* PlayMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMusicViewController.swift; sourceTree = "<group>"; };
+		724E9BF7278BE7540070E468 /* PlayMusicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayMusicViewController.xib; sourceTree = "<group>"; };
+		724E9BFA278BEC7B0070E468 /* PlayMusicPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMusicPresenter.swift; sourceTree = "<group>"; };
 		729009A4278AC6DC00581861 /* TexFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TexFieldExtension.swift; sourceTree = "<group>"; };
 		AE992BA7B1501B95BA8B98F1 /* Pods-MusicBattles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicBattles.debug.xcconfig"; path = "Target Support Files/Pods-MusicBattles/Pods-MusicBattles.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +129,7 @@
 		724D2A13278A7C5A006DE821 /* MusicBattles */ = {
 			isa = PBXGroup;
 			children = (
+				724E9BF3278BE71C0070E468 /* PlayMusic */,
 				724E9BDA278BD6600070E468 /* Music */,
 				724D2A38278AA7F8006DE821 /* Models */,
 				724D2A43278AC05E006DE821 /* Register */,
@@ -175,6 +186,8 @@
 			children = (
 				724D2A3B278AA9C1006DE821 /* DataUSerTableViewCell.swift */,
 				724D2A3C278AA9C1006DE821 /* DataUSerTableViewCell.xib */,
+				724E9BEF278BE2240070E468 /* DataMusicCollectionViewCell.swift */,
+				724E9BF0278BE2240070E468 /* DataMusicCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -265,6 +278,32 @@
 				724E9BDB278BD66C0070E468 /* noEstoyRoto.mp3 */,
 			);
 			path = Music;
+			sourceTree = "<group>";
+		};
+		724E9BF3278BE71C0070E468 /* PlayMusic */ = {
+			isa = PBXGroup;
+			children = (
+				724E9BF4278BE72B0070E468 /* Presenter */,
+				724E9BF5278BE7390070E468 /* View */,
+			);
+			path = PlayMusic;
+			sourceTree = "<group>";
+		};
+		724E9BF4278BE72B0070E468 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				724E9BFA278BEC7B0070E468 /* PlayMusicPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		724E9BF5278BE7390070E468 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				724E9BF6278BE7540070E468 /* PlayMusicViewController.swift */,
+				724E9BF7278BE7540070E468 /* PlayMusicViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		BBCC68FA319CAB1304DE2391 /* Pods */ = {
@@ -360,10 +399,12 @@
 				724E9BE9278BDAAB0070E468 /* frenesi.mp3 in Resources */,
 				724D2A4B278AC0E0006DE821 /* RegisterViewController.xib in Resources */,
 				724E9BED278BDAAB0070E468 /* nuestrasHuellas.mp3 in Resources */,
+				724E9BF2278BE2240070E468 /* DataMusicCollectionViewCell.xib in Resources */,
 				724E9BE7278BDAAB0070E468 /* hardTimes.mp3 in Resources */,
 				724D2A4F278AC10B006DE821 /* LoginViewController.xib in Resources */,
 				724E9BE8278BDAAB0070E468 /* stereoFresh.mp3 in Resources */,
 				724E9BDC278BD66C0070E468 /* noEstoyRoto.mp3 in Resources */,
+				724E9BF9278BE7540070E468 /* PlayMusicViewController.xib in Resources */,
 				724E9BEE278BDAAB0070E468 /* c'mere.mp3 in Resources */,
 				724D2A21278A7C5B006DE821 /* LaunchScreen.storyboard in Resources */,
 				724D2A3E278AA9C1006DE821 /* DataUSerTableViewCell.xib in Resources */,
@@ -431,10 +472,13 @@
 				724D2A4A278AC0E0006DE821 /* RegisterViewController.swift in Sources */,
 				724E9BD9278BC69A0070E468 /* ProfilePresenter.swift in Sources */,
 				724D2A3A278AA808006DE821 /* ModelsRealm.swift in Sources */,
+				724E9BF1278BE2240070E468 /* DataMusicCollectionViewCell.swift in Sources */,
 				724E9BD3278B9D360070E468 /* StringExtension.swift in Sources */,
 				724D2A41278ABCD0006DE821 /* UIImageViewWExtension.swift in Sources */,
 				724E9BD7278BAE380070E468 /* UIButtonExtension.swift in Sources */,
+				724E9BFB278BEC7B0070E468 /* PlayMusicPresenter.swift in Sources */,
 				724D2A3D278AA9C1006DE821 /* DataUSerTableViewCell.swift in Sources */,
+				724E9BF8278BE7540070E468 /* PlayMusicViewController.swift in Sources */,
 				724D2A17278A7C5A006DE821 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

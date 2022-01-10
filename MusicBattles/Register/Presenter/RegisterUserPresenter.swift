@@ -14,8 +14,16 @@ class RegisterUserPresenter {
     let keychain = KeychainSwift()
     let realm = try! Realm()
     var registerUser: RegisterUser?
+    var users = try! Realm().objects(RegisterUser.self)
     
-    func registerUser(name: String, lastName: String, age: Int, email: String){
+    func registerUser(name: String, lastName: String, age: Int, email: String) -> Bool {
+        var validate = true
+        for user in users {
+            if user.email == email {
+                validate = false
+                return false
+            }
+        }
         try! realm.write{
             let newUser = RegisterUser()
             newUser.name = name
@@ -25,6 +33,7 @@ class RegisterUserPresenter {
             realm.add(newUser)
             registerUser = newUser
         }
+        return validate
     }
     
     func savePassword(email: String, password: String){

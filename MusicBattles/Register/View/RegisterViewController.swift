@@ -42,12 +42,15 @@ class RegisterViewController: BaseViewController {
                   let safePassword = passwordTextField.text else {
                       return
                   }
-            self.presenter.registerUser(name: safeName,
+            if presenter.registerUser(name: safeName,
                                         lastName: safeLastName,
                                         age: Int(safeAge) ?? .zero,
-                                        email: safeEmail)
-            self.presenter.savePassword(email: safeEmail, password: safePassword)
-            navigationController?.popViewController(animated: true)
+                                           email: safeEmail) {
+                self.presenter.savePassword(email: safeEmail, password: safePassword)
+                navigationController?.popViewController(animated: true)
+            } else {
+                showAlert(title: "¡Ups!", description: "Parece que este correo ya se encunetra registrado")
+            }
         } else {
             print("Error de registro")
         }
